@@ -16,8 +16,10 @@ kill_timeout = '5s'
   AUTOSTOP_TIMEOUT_EST = '120'
   AUTOSTOP_TIMEOUT_INIT = '120'
   ENABLE_AUTOSTOP = 'TRUE'
+  ENABLE_WHITELIST = 'TRUE'
+  WHITELIST = 'mjftwebs'
   EULA = 'TRUE'
-  MEMORY = '2G'
+  MEMORY = '3G'
   PRIMARY_REGION = 'lhr'
 
 [[mounts]]
