@@ -17,7 +17,7 @@ kill_timeout = '5s'
   AUTOSTOP_TIMEOUT_INIT = '120'
   ENABLE_AUTOSTOP = 'TRUE'
   EULA = 'TRUE'
-  MEMORY = '1G'
+  MEMORY = '2G'
   PRIMARY_REGION = 'lhr'
 
 [[mounts]]
@@ -38,6 +38,6 @@ kill_timeout = '5s'
     soft_limit = 20
 
 [[vm]]
-  memory = '2gb'
+  memory = '4gb'
   cpu_kind = 'shared'
   cpus = 4
