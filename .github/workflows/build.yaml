@@ -27,4 +27,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - name: Deploy
-        run: flyctl deploy --remote-only --app ${{ secrets.APP_NAME }} --env OPS=${{ vars.OPS }} --env CF_API_KEY=${{ secrets.CF_API_TOKEN }}
+        run: flyctl deploy --remote-only --app ${{ secrets.APP_NAME }} --env OPS=${{ vars.OPS }} --env CF_API_KEY=${{ secrets.CF_API_KEY }}
