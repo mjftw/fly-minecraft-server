@@ -22,10 +22,9 @@ jobs:
     needs:
       - fly-config-validate
     env:
-      CF_API_KEY: ${{ secrets.CF_API_TOKEN }}
       FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - name: Deploy
-        run: flyctl deploy --remote-only --app ${{ secrets.APP_NAME }} --env OPS=${{ vars.OPS }}
+        run: flyctl deploy --remote-only --app ${{ secrets.APP_NAME }} --env OPS=${{ vars.OPS }} --env CF_API_KEY=${{ secrets.CF_API_TOKEN }}
