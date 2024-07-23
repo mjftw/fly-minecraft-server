@@ -22,7 +22,7 @@ kill_timeout = '5s'
   CF_PAGE_URL = 'https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc4'
   TYPE = 'AUTO_CURSEFORGE'
   EULA = 'TRUE'
-  MEMORY = '3G'
+  MEMORY = '7G'
   PRIMARY_REGION = 'lhr'
 
 [[mounts]]
@@ -43,6 +43,6 @@ kill_timeout = '5s'
     soft_limit = 20
 
 [[vm]]
-  memory = '4gb'
+  memory = '8gb'
   cpu_kind = 'shared'
   cpus = 4
